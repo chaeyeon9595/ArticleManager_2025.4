@@ -1,10 +1,18 @@
-
 package koreaIT;
 
 public class Article {
     private int id;
     private String title;
     private String body;
+    private String regDate;
+
+    public String getRegDate() {
+        return regDate;
+    }
+
+    public void setRegDate(String regDate) {
+        this.regDate = regDate;
+    }
 
     public int getId() {
         return id;
