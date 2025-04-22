@@ -1,5 +1,5 @@
 
-package koreaIT;
+package koreaIT.dto;
 
 public class Article {
     private int id;
