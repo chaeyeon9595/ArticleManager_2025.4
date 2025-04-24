@@ -208,3 +208,5 @@ public class ArticleController extends Controller {
         articleList.add(new Article(3, "제목3", "내용3", "2025-05-12 12:12:12", Util.getNowDate(), 2));
     }
 }
+
+//게시글의 작성자만 수정 및 삭제가 가능하도록..
