@@ -1,4 +1,3 @@
-
 package koreaIT.dto;
 
 public class Article {
@@ -67,3 +66,5 @@ public class Article {
         this.body = body;
     }
 }
+
+//작성자 정보
