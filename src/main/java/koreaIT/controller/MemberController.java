@@ -1,11 +1,10 @@
 
-
 package koreaIT.controller;
 
+import koreaIT.Container;
 import koreaIT.dto.Member;
 import koreaIT.util.Util;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -17,7 +16,7 @@ public class MemberController extends Controller {
 
     public MemberController(Scanner sc) {
         this.sc = sc;
-        this.memberList = new ArrayList<>();
+        this.memberList = Container.memberDao.memberList;
     }
 
     public void doAction(String methodName, String cmd){

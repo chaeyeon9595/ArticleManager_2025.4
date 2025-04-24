@@ -1,10 +1,10 @@
 
 package koreaIT.controller;
 
+import koreaIT.Container;
 import koreaIT.dto.Article;
 import koreaIT.util.Util;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class ArticleController extends Controller {
 
     public ArticleController(Scanner sc) {
         this.sc = sc;
-        this.articleList = new ArrayList<>();
+        this.articleList = Container.articleDao.articleList;
     }
 
     @Override
@@ -208,5 +208,3 @@ public class ArticleController extends Controller {
         articleList.add(new Article(3, "제목3", "내용3", "2025-05-12 12:12:12", Util.getNowDate(), 2));
     }
 }
-
-//게시글의 작성자만 수정 및 삭제가 가능하도록..
